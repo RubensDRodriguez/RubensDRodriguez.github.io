@@ -63,3 +63,19 @@ function calcFlujo(peso) {
 
   return flujo;
 }
+
+//Deja en blanco el input cuando se borran los elementos
+const INPUT_PESO = document.getElementById('peso');
+
+INPUT_PESO.addEventListener('focusout', () => {
+  if (INPUT_PESO.value === '') {
+    document.getElementById('error').style.display = 'none';
+    document.getElementById('flu').innerHTML = '';
+    document.getElementById('man').innerHTML = '';
+  } else if (INPUT_PESO.value < 1) {
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('flu').innerHTML = 'El peso ingresado no es válido. Ingrese un peso mayor a 0.';
+    document.getElementById('man').innerHTML = '';
+  }
+});
+
