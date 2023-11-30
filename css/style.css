@@ -1,0 +1,43 @@
+/* Estilo general */
+body {
+  @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para los encabezados de las tarjetas */
+.titulo-tarjeta {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+  background-color: #2b2a2a;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen de las tarjetas */
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para los enlaces de las tarjetas */
+.tarjeta a {
+  text-decoration-style: initial;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+ul {
+  display: flex;
+}
+
